@@ -1,6 +1,6 @@
 {
   "name": "@7nohe/sample-mcp-server",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "My MCP server",
   "keywords": [
     "mcp"
@@ -8,9 +8,7 @@
   "license": "MIT",
   "author": "Daiki Urata",
   "type": "module",
-  "bin": {
-    "my-mcp": "./dist/index.js"
-  },
+  "bin": "./dist/index.js",
   "files": [
     "dist",
     "README.md"
@@ -27,5 +25,8 @@
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.9.0",
     "zod": "^3.24.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
